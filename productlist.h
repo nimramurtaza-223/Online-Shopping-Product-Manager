@@ -27,8 +27,8 @@ public:
 
     void Insert(ProductNode* product);
     ProductNode* Remove();
-    bool IsEmpty();
-    bool IsNotEmpty();
+    bool IsEmpty() const;
+    bool IsNotEmpty() const;
     void InsertAt(ProductNode* product, int index);
     ProductNode* RemoveAt(int index);
     void Swap(int index1, int index2);
