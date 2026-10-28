@@ -34,6 +34,13 @@ int main()
         cout << "Enter your choice: ";
 
         cin >> choice;
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize::max(),'\n');
+            cout<<"Invalid input.Enter a number.\n";
+            continue;
+        }
 
         switch (choice)
         {
