@@ -50,12 +50,12 @@ ProductNode* ProductList::Remove()
     return product;
 }
 
-bool ProductList::IsEmpty()
+bool ProductList::IsEmpty() const
 {
     return head == nullptr;
 }
 
-bool ProductList::IsNotEmpty()
+bool ProductList::IsNotEmpty() const
 {
     return head != nullptr;
 }
